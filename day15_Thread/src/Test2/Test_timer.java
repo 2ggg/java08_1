@@ -24,7 +24,6 @@ class Timer extends Thread{
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	}
@@ -55,25 +54,21 @@ class Frame extends Thread{
 		
 	public void btnFunction() {//시작,종료 버튼 기능
 		btn.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				
 				i++;
 				String stringI = String.valueOf(i);
 				txtArea.append(stringI); //txtarea로 글 보냄(String만 가능)
-				
 			}
 		});
 		btn2.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
 				
 			}
 		});
 	}
+	
 	public void frameDefault() {//설정 적용 + 창 띄우기
 		frame.setPreferredSize(new Dimension(500,200));//창크기 설정
 		frame.setLocationRelativeTo(null);//가운데 띄우기
