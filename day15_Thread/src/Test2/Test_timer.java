@@ -64,7 +64,7 @@ class Frame extends Thread{
 		btn2.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				
+				//정지 기능
 			}
 		});
 	}
@@ -74,7 +74,7 @@ class Frame extends Thread{
 		frame.setLocationRelativeTo(null);//가운데 띄우기
 		Font font = new Font(null, Font.BOLD, 32);//폰트 생성
 		label.setFont(font);//폰트와 라벨 연결시키기
-		label.setHorizontalAlignment(JLabel.CENTER);//폰트 위치
+		label.setHorizontalAlignment(JLabel.CENTER);//라벨 위치
 		
 		frame.pack(); //위에 것들 적용하기
 		frame.setVisible(true); //창 띄우기
@@ -124,7 +124,6 @@ class Frame extends Thread{
 			timer.sleep();
 		}
 	}
-	
 }
 
 public class Test_timer {
@@ -142,7 +141,6 @@ public class Test_timer {
 		}
 		*/
 		
-		//frame.frame();
 		frame.panelFrame();
 	}
 }
