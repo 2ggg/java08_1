@@ -9,8 +9,10 @@ public class Ex03 {
 		arr.add(1234);
 		arr.add(1.123);
 		arr.add('a'); 
-		//원래는 타입 지정없이 모든 값 저장 가능
+		String str = (String)arr.get(0); // 타입 변환이 필요
 		
+		System.out.println(str);
+
 		ArrayList<String> arr1 = new ArrayList<String>();
 		arr1.add("test");
 		//String만 저장 가능

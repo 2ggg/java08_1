@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="413.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="408.0" prefHeight="37.0" prefWidth="594.0" style="-fx-background-color: yellow;">
+         <center>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="177.0" text="바닥글 들어가는 곳" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <VBox layoutY="70.0" prefHeight="338.0" prefWidth="146.0" style="-fx-background-color: skyblue;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="112.0" text="메뉴 나열" />
+         </children>
+      </VBox>
+      <VBox layoutX="146.0" layoutY="70.0" prefHeight="338.0" prefWidth="146.0" style="-fx-background-color: green;">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="37.0" prefWidth="137.0" text="내용 들어가는 곳" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets right="10.0" top="10.0" />
+         </opaqueInsets>
+      </VBox>
+      <Pane prefHeight="70.0" prefWidth="594.0" style="-fx-background-color: pink;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="383.0" layoutY="17.0" prefHeight="37.0" prefWidth="44.0" text="메뉴" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="503.0" layoutY="17.0" prefHeight="37.0" prefWidth="44.0" text="로그인" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="437.0" layoutY="17.0" prefHeight="37.0" prefWidth="44.0" text="홈" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <BorderPane layoutX="292.0" layoutY="70.0" prefHeight="338.0" prefWidth="302.0">
+         <center>
+            <GridPane prefHeight="249.0" prefWidth="223.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="87.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="196.0" minHeight="10.0" prefHeight="196.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="23.0" prefWidth="89.0" text="Button" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="23.0" prefWidth="89.0" text="Button" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>
