@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+
+<AnchorPane prefHeight="286.0" prefWidth="410.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="test.Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="104.0" prefHeight="14.0" prefWidth="30.0" text="성별" textAlignment="CENTER" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="304.0" AnchorPane.topAnchor="104.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="144.0" prefHeight="30.0" prefWidth="44.0" text="취미" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="187.0" prefHeight="30.0" prefWidth="56.0" text="연령구분" textAlignment="CENTER" />
+      <RadioButton fx:id="rdoWoman" layoutX="146.0" layoutY="103.0" mnemonicParsing="false" text="여성">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdoMan" layoutX="224.0" layoutY="103.0" mnemonicParsing="false" text="남성" toggleGroup="$gender" />
+      <CheckBox fx:id="chkMusic" layoutX="146.0" layoutY="151.0" mnemonicParsing="false" text="음악" />
+      <CheckBox fx:id="chkSport" layoutX="218.0" layoutY="151.0" mnemonicParsing="false" text="스포츠" />
+      <CheckBox fx:id="chkMovie" layoutX="303.0" layoutY="151.0" mnemonicParsing="false" text="영화" />
+      <ComboBox fx:id="cmbAge" layoutX="143.0" layoutY="191.0" prefWidth="150.0" promptText="연력대 선택" />
+      <Button fx:id="btn" layoutX="225.0" layoutY="248.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="78.0" text="확인">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
-
