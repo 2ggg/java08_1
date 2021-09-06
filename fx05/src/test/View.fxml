@@ -25,7 +25,12 @@
       <CheckBox fx:id="chkSport" layoutX="218.0" layoutY="151.0" mnemonicParsing="false" text="스포츠" />
       <CheckBox fx:id="chkMovie" layoutX="303.0" layoutY="151.0" mnemonicParsing="false" text="영화" />
       <ComboBox fx:id="cmbAge" layoutX="143.0" layoutY="191.0" prefWidth="150.0" promptText="연력대 선택" />
-      <Button fx:id="btn" layoutX="225.0" layoutY="248.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="78.0" text="확인">
+      <Button fx:id="btn" layoutX="179.0" layoutY="250.0" mnemonicParsing="false" onAction="#viewProc" prefHeight="44.0" prefWidth="78.0" text="확인">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn1" layoutX="287.0" layoutY="250.0" mnemonicParsing="false" onAction="#click" prefHeight="44.0" prefWidth="78.0" text="click">
          <font>
             <Font size="19.0" />
          </font>
