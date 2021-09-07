@@ -12,7 +12,11 @@
 
 <AnchorPane prefHeight="286.0" prefWidth="410.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="test.Controller">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="104.0" prefHeight="14.0" prefWidth="30.0" text="성별" textAlignment="CENTER" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="304.0" AnchorPane.topAnchor="104.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="104.0" prefHeight="14.0" prefWidth="30.0" text="성별" textAlignment="CENTER" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="304.0" AnchorPane.topAnchor="104.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="144.0" prefHeight="30.0" prefWidth="44.0" text="취미" textAlignment="CENTER" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="187.0" prefHeight="30.0" prefWidth="56.0" text="연령구분" textAlignment="CENTER" />
       <RadioButton fx:id="rdoWoman" layoutX="146.0" layoutY="103.0" mnemonicParsing="false" text="여성">
