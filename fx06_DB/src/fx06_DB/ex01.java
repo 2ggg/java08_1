@@ -9,10 +9,17 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class ex01 extends Application {
+	
 	@Override
 	public void start(Stage primaryStage) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("ex01_scene.fxml"));
+		
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("ex01_scene.fxml"));
+		Parent root = loader.load();
+		
 		Scene scene = new Scene(root);
+		Controller ctl = loader.getController();
+		
+		ctl.setRoot(root);
 		primaryStage.setTitle("DB연결");
 		primaryStage.setScene(scene);
 		primaryStage.show();

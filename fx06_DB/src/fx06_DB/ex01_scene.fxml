@@ -9,7 +9,7 @@
       <TextField fx:id="memberId" layoutX="66.0" layoutY="30.0" promptText="input id" />
       <TextField fx:id="memberPwd" layoutX="66.0" layoutY="66.0" promptText="input password" />
       <TextField fx:id="memberName" layoutX="66.0" layoutY="106.0" promptText="input name" />
-      <Button layoutX="66.0" layoutY="146.0" mnemonicParsing="false" onAction="#membership" text="회원가입" />
+      <Button fx:id="btnDTO" layoutX="66.0" layoutY="146.0" mnemonicParsing="false" onAction="#membership" text="회원가입" />
       <TextField fx:id="fxId" layoutX="61.0" layoutY="194.0" promptText="input id" />
       <TextField fx:id="fxPwd" layoutX="61.0" layoutY="232.0" promptText="input password" />
       <Button layoutX="227.0" layoutY="194.0" mnemonicParsing="false" onAction="#login" prefHeight="59.0" prefWidth="64.0" text="로그인" />
