@@ -16,5 +16,7 @@ public class Client02 {
 		
 		dataOutput.writeUTF(data);
 		System.out.println("전송 완료");
+		
+		dataOutput.close(); output.close(); socket.close();
 	}
 }
