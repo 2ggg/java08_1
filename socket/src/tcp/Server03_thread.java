@@ -12,6 +12,7 @@ class UserThread extends Thread{
 		this.socket = socket;
 		System.out.println("접속ip: "+socket.getInetAddress());
 		start(); //run실행
+		
 	}
 	public void run() {
 		String readData = null;
