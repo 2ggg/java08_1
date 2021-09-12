@@ -11,7 +11,7 @@ class UserThread extends Thread{
 	public UserThread(Socket socket) {
 		this.socket = socket;
 		System.out.println("접속ip: "+socket.getInetAddress());
-		start();
+		start(); //run실행
 	}
 	public void run() {
 		String readData = null;
@@ -23,10 +23,12 @@ class UserThread extends Thread{
 				DataInputStream dataInput = new DataInputStream(input);
 				readData = dataInput.readUTF();
 				System.out.println("수신 데이터 : "+readData);
+				/*
 				if(readData.equals("stop")) {
 					System.out.println("서버 종료");
 					dataInput.close(); socket.close();
 				}
+				*/
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
